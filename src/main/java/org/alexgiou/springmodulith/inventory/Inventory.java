@@ -1,10 +1,7 @@
 package org.alexgiou.springmodulith.inventory;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 import java.math.BigDecimal;
 
@@ -14,7 +11,9 @@ import java.math.BigDecimal;
  */
 @Entity
 @Setter
+@Getter
 @ToString
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(indexes = @Index(name = "inv_name_Idx", columnList = "name"))
